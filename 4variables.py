@@ -94,3 +94,71 @@ x, y, z = fruits
 print(x)
 print(y)
 print(z)
+
+
+print("=================================1.4=========================================")
+print("=================================Output Variables=========================================")
+
+x = "Python"
+y = "is"
+z = "awesome"
+print(x, y, z)
+
+print(x + y + z)
+
+
+x = 5
+y = 10
+print(x + y)
+
+
+#x = 5
+#y = "John"
+#print(x + y)   TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+
+print("=================================1.5=========================================")
+print("=================================Global Variables=========================================")
+
+x = "Awsome"
+
+def myfunc():
+    print("Python is " + x)
+
+myfunc()
+
+print("==========================================================================")
+
+
+x = "awesome"
+
+def myfunc():
+  x = "fantastic"
+  print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+
+print("==========================================================================")
+
+def myfunc():
+   global x
+   x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
+
+print("==========================================================================")
+
+
+x = "awesome"
+
+def myfunc():
+  global x
+  x = "fantastic"
+
+myfunc()
+
+print("Python is " + x)
